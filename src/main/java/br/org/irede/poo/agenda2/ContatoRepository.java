@@ -61,7 +61,7 @@ public class ContatoRepository {
         salvarTodos(contatos);
 
         return contato;
-            }
+    }
 
     private void salvarTodos(List<Contato> contatos){
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(caminhoArquivo, false))){
@@ -76,27 +76,27 @@ public class ContatoRepository {
     
     //Ler todos os contatos
     private List<Contato> lerTodos(){
-    List<Contato> contatos = new ArrayList<>();
-    try(BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))){
+        List<Contato> contatos = new ArrayList<>();
+        try(BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))){
 
-        String linha;
+            String linha;
 
-        while((linha = br.readLine()) != null){
-            String dados[] = linha.split("\\|");
-            if(dados.length == 3){
-                Contato c = new Contato();
+            while((linha = br.readLine()) != null){
+                String dados[] = linha.split("\\|");
+                if(dados.length == 3){
+                    Contato c = new Contato();
 
-                c.setIdentificador(Integer.parseInt(dados[0].trim()));
-                c.setNome(dados[1].trim());
-                c.setTelefone(dados[2].trim());
+                    c.setIdentificador(Integer.parseInt(dados[0].trim()));
+                    c.setNome(dados[1].trim());
+                    c.setTelefone(dados[2].trim());
 
-                contatos.add(c);
+                    contatos.add(c);
+                }
             }
-        }
-    }catch(IOException e){
-        throw new RuntimeException(e);
-    }
-    return contatos;
+            }catch(IOException e){
+                throw new RuntimeException(e);
+            }
+        return contatos;
     }
     
     //Método para listar contatos
@@ -119,13 +119,13 @@ public class ContatoRepository {
     //Criando o método Aualizar
     public void atualizar(Contato contato){
     List<Contato> contatos = lerTodos();
-    for(int i=0;i<contatos.size();i++){
-        if(contatos.get(i).getIdentificador()==contato.getIdentificador()){
-            contatos.set(i, contato);
-            salvarTodos(contatos);
-            return;
+        for(int i=0;i<contatos.size();i++){
+            if(contatos.get(i).getIdentificador()==contato.getIdentificador()){
+                contatos.set(i, contato);
+                salvarTodos(contatos);
+                return;
+            }
         }
-    }
     }
     
     //Criando o método de excluir

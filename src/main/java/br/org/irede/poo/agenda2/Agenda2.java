@@ -114,7 +114,6 @@ public class Agenda2 {
     
      public static String capturaTexto(String texto){
          return JOptionPane.showInputDialog(null, texto, ".: Sistema Agenda:.",
-                JOptionPane.QUESTION_MESSAGE);
-         
+                JOptionPane.QUESTION_MESSAGE);         
     }
 }
