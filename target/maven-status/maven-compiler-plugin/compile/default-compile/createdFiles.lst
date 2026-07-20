@@ -1,0 +1,4 @@
+br\org\irede\poo\agenda2\Agenda2.class
+br\org\irede\poo\agenda2\ContatoDuplicadoException.class
+br\org\irede\poo\agenda2\ContatoRepository.class
+br\org\irede\poo\agenda2\Contato.class
