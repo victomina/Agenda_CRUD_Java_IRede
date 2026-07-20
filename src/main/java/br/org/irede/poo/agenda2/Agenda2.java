@@ -6,6 +6,8 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author Usuário
+ * 
+ * 
  */
 public class Agenda2 {
     
@@ -37,7 +39,7 @@ public class Agenda2 {
                     break;
                 case "2":
                     listarContatos();
-                    JOptionPane.showMessageDialog(null, "Consulta");
+                   // JOptionPane.showMessageDialog(null, "Consulta");
                     break;
                 case "3":
                     buscarContato();
