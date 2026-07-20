@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  * 
  */
 public class Agenda2 {
-    
+    //versão final enviada para o trabalho de apoio do primeiro modulo de Java
     private static final String ARQUIVO_DADOS = "contatos.txt";
     private static final ContatoRepository repository = new ContatoRepository(ARQUIVO_DADOS);
     
