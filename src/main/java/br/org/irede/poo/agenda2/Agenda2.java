@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Usuário
+ * @author Victor Veríssimo Pereira Lopes
  * 
  * 
  */
