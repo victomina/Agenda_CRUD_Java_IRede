@@ -10,4 +10,5 @@
         <maven.compiler.release>26</maven.compiler.release>
         <exec.mainClass>br.org.irede.poo.agenda2.Agenda2</exec.mainClass>
     </properties>
+    <name>TrabalhoFinalAgenda</name>
 </project>

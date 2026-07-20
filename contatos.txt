@@ -3,3 +3,4 @@
 3 | JEsus Saves | 85 8888 7777
 5 | Josivaldo | 85 0000 1111
 6 | Lucivaldo | 85 2424 3232
+7 | Genivaldo | 65 9999 8888
